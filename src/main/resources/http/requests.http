@@ -1,0 +1,32 @@
+### Запрос на получение списка студентов с определенной страницы
+GET localhost:8082/students
+
+### Добавление студента
+POST localhost:8082/students
+Content-Type: application/json
+
+{
+  "firstName": "java",
+  "lastName": "111"
+}
+
+### Обновление данных по студенту
+PUT localhost:8082/students/9
+Content-Type: application/json
+
+{
+  "firstName": "Marina",
+  "lastName": "Ivanova"
+}
+
+### удаление студента
+DELETE localhost:8082/students/9
+
+
+###
+POST localhost:8082/students/8/courses
+Content-Type: application/json
+
+{
+  "id": 1
+}
